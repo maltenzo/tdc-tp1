@@ -1,0 +1,16 @@
+Fuente S1:
+Cantidad de paquetes: 10000.0
+ ('UNICAST', 2048) : 0.97510
+ ('UNICAST', 2054) : 0.00640
+ ('BROADCAST', 2048) : 0.01080
+ ('UNICAST', 34525) : 0.00700
+ ('BROADCAST', 2054) : 0.00070
+
+Información de los simbolos de la fuente S1:
+ ('UNICAST', 2048) : 0.03638
+ ('UNICAST', 2054) : 7.28771
+ ('BROADCAST', 2048) : 6.53282
+ ('UNICAST', 34525) : 7.15843
+ ('BROADCAST', 2054) : 10.48036
+
+Entropía de la fuente S1: 0.21011
