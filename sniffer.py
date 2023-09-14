@@ -28,15 +28,12 @@ def add_pkt_to_csv(pkt):
 def callback(pkt):
     add_pkt_to_csv(pkt)
     if pkt.haslayer(Ether):
-        # print(pkt.summary())
-        # print(sum(S1.values()))
         dire = "BROADCAST" if pkt[Ether].dst=="ff:ff:ff:ff:ff:ff" else "UNICAST"
         proto = pkt[Ether].type # El campo type del frame tiene el protocolo
         s_i = (dire, proto) # Aca se define el simbolo de la fuente
         if s_i not in S1:
             S1[s_i] = 0.0
         S1[s_i] += 1.0
-    #mostrar_fuente(S1)
 
 def main():
     global StartTime
